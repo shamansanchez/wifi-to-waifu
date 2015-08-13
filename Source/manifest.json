@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt",
+	"name": "Wi-Fi to Waifu",
 	"version": "1.0",
-	"description": "Replaces the text 'the cloud' with 'my butt'.",
-	"content_scripts": 
+	"description": "Replaces wifi (and variations) with waifu",
+	"content_scripts":
 	[
 		{
 			"matches": ["*://*/*"],
