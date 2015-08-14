@@ -10,6 +10,12 @@
             "js": ["content_script.js"],
             "run_at": "document_end"
         }
-    ]
+    ],
+    "icons": {
+        "512": "signal512.png",
+        "256": "signal256.png",
+        "128": "signal128.png",
+        "64":  "signal64.png"
+    }
 }
 
