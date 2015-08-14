@@ -22,7 +22,9 @@ function walk(node)
             break;
 
         case 3: // Text node
-            handleText(node);
+            if(node.parentElement.tagName.toLowerCase() != "script") {
+                handleText(node);
+            }
             break;
     }
 }
@@ -33,10 +35,10 @@ function handleText(textNode)
 
     v = v.replace(/\bwifi\b/g, "waifu");
     v = v.replace(/\bwi-fi\b/g, "waifu");
-    v = v.replace(/\bWi-fi\b/g, "waifu");
-    v = v.replace(/\bWifi\b/g, "waifu");
-    v = v.replace(/\bWiFi\b/g, "waifu");
-    v = v.replace(/\bWi-Fi\b/g, "waifu");
+    v = v.replace(/\bWi-fi\b/g, "Waifu");
+    v = v.replace(/\bWifi\b/g, "Waifu");
+    v = v.replace(/\bWiFi\b/g, "Waifu");
+    v = v.replace(/\bWi-Fi\b/g, "Waifu");
 
     textNode.nodeValue = v;
 }
