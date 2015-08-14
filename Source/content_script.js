@@ -32,6 +32,11 @@ function handleText(textNode)
     var v = textNode.nodeValue;
 
     v = v.replace(/\bwifi\b/g, "waifu");
+    v = v.replace(/\bwi-fi\b/g, "waifu");
+    v = v.replace(/\bWi-fi\b/g, "waifu");
+    v = v.replace(/\bWifi\b/g, "waifu");
+    v = v.replace(/\bWiFi\b/g, "waifu");
+    v = v.replace(/\bWi-Fi\b/g, "waifu");
 
     textNode.nodeValue = v;
 }
